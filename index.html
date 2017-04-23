@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html>
+<!-- The instructions were to use only CSS3 and HTML5 to duplicate the google homepage site.  So there's bootstrap, no JavaScript, and, sadly, no functionality. HOWEVER, there is LOTS of tricky formating, like Positiion tags, clearing floats, styling links, changing form and button defaults, and lots more! 
+
+This is a project from the_Odin_Project. Try resizing it! It won't distort like a lot of the other solitiions here.  It behaves similarly to the real homepage.
+
+Thank you for looking at it! 
+
+--> 
+
 <head>
 	<title>Google</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <nav>
-	<ul class="topNav">
+	<ul class="toTheRight">
 		<li><a href="#">Gmail</a></li>
 		<li><a href="#">Images</a></li>
 		<li><a href="#"><img src="nineBoxes.png"/></a></li>
-		<li><a href="#"><img src="bell.png"/></a></li>
-		<li><a href="#"><img src="userPhoto.png"/></a></li>
-	</ul>
-
+		<li><a href=""><button class="blueButton">Sign in</button></a> 
+			</ul>
 </nav>
 
 <section>
-	<img class="mainImage" src="googleLogo.png" alt= "GoogleLogo"/>
-</section>
+	<img src="googleLogo.png" alt= "GoogleLogo"/>
+
 <form>
-	<input type="text" name="searchBox"><br>
-	<input type="button" name="searchButton" value="Click!">
-	<input type="button" name="lucky" value = "I'm Feeling Lucky!">
+	<input class="longerBox" type="text" name="searchBox"><br><br>
+	<input type="button" class="greyButton" name="searchButton" value="Google Search">
+	<input type="button" class="greyButton" name="lucky" value = "I'm Feeling Lucky">
 </form>
 
-<footer>
-	<ul class="bottomNav">
-		<li> <a href="#"> Advertising </a></li>
-		<li> <a href="#"> Business </a></li>
-		<li> <a href="#"> About </a></li>
-		<li> <a href="#"> Privacy </a></li>
-</footer>
+</section>
 
+<div class="foot">
 
+	<ul>
+		<li> <a href="#">Advertising</a></li>
+		<li> <a href="#">Business</a></li>
+		<li> <a href="#">About</a></li>
+	</ul>
+	<ul class="toTheRight">
+		<li> <a href="#">Privacy</a></li>
+		<li> <a href="#">Terms</a></li>
+		<li> <a href="#">Settings</a></li>
+
+	</ul>					
+
+</div>
 </body>
 </html>
